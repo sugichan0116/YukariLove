@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
-  cardData: {fileID: 0}
+  cardData: {fileID: 11400000, guid: 1998c5923bdaad049bb0cecb26dc89aa, type: 2}
   effects: []
 --- !u!114 &1906559602986410446
 MonoBehaviour:
