@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a1a26f835e571409461e0ae2001744, type: 3}
   m_Name: allx2
   m_EditorClassIdentifier: 
-  priority: 1
   condition: 2
   conditionVolume: 3
   targetType: 0
   bonus: 1
+  priority: 1
   bonusVolume: 2

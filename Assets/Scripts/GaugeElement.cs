@@ -7,10 +7,13 @@ public class GaugeElement : MonoBehaviour
 {
     public float volume;
     public float Length { get; set; }
+    public bool IsGauge;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (IsGauge) return;
+
         var rect = GetComponent<RectTransform>();
         var text = GetComponentInChildren<TextMeshProUGUI>();
         var offset = rect.sizeDelta;
@@ -21,6 +24,4 @@ public class GaugeElement : MonoBehaviour
                 text.text = (volume > 0) ? $"{volume}" : "";
             });
     }
-
-    
 }

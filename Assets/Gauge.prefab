@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 80
+  IsGauge: 0
 --- !u!1 &4022361186947086004
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +263,7 @@ GameObject:
   - component: {fileID: 46256761693228706}
   - component: {fileID: 7292619737998016770}
   - component: {fileID: 2876579157520853377}
+  - component: {fileID: 3580242006660693240}
   m_Layer: 5
   m_Name: Gauge
   m_TagString: Untagged
@@ -362,8 +364,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2fff8ba9aeaad4aa40d2b396ec4680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 100
   error: {r: 0.8207547, g: 0.23616053, b: 0.23616053, a: 1}
+--- !u!114 &3580242006660693240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269542621585579825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fd25538f5edd64cb7e175d48e07afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 300
+  IsGauge: 1
 --- !u!1 &8350857251655056199
 GameObject:
   m_ObjectHideFlags: 0

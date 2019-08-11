@@ -29,6 +29,8 @@ public class CardEffector
                     .Count();
 
                 return targetCount >= effect.conditionVolume;
+            case CardEffect.Conditions.PRICE:
+                return target.price >= effect.conditionVolume;
         }
 
         return false;

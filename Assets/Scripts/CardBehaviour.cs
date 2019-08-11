@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine.UI;
 using UniRx.Triggers;
 using DG.Tweening;
-using Hellmade.Sound;
+using Hellmade.Sound;
+
 public class CardBehaviour : MonoBehaviour
 {
     private float delta = 10;
@@ -12,14 +13,7 @@ public class CardBehaviour : MonoBehaviour
 
     public AudioClip sfx_hover;
     public AudioClip sfx_click;
-
-    public TextMeshProUGUI product;
-    public Image icon;
-    public TextMeshProUGUI type;
-    public TextMeshProUGUI love, loveplus;
-    public TextMeshProUGUI price;
-    public TextMeshProUGUI effect;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +21,7 @@ public class CardBehaviour : MonoBehaviour
         var cardData = card.cardData;
         var trigger = GetComponent<ObservableEventTrigger>();
 
-        float offset = transform.position.y;
+        float offset = transform.localPosition.y;
         
         trigger
             .OnPointerEnterAsObservable()
@@ -50,20 +44,5 @@ public class CardBehaviour : MonoBehaviour
                 if(card.selected) EazySoundManager.PlayUISound(sfx_click);
             });
 
-        Observable
-            .EveryUpdate()
-            .Subscribe(_ =>
-            {
-                product.text = cardData.product;
-                icon.sprite = cardData.icon;
-                type.text = $"{cardData.type}";
-                var loveDelta = card.GetLove() - cardData.love;
-                love.text = $"{cardData.love}" +
-                    ((loveDelta > 0) ? $"\n<size=6>(+{loveDelta})</size>" : "");
-                //loveplus.text = ((loveDelta > 0) ? $"(+{loveDelta})" : "");
-                price.text = $"${card.GetPrice()}";
-                effect.text = $"{cardData.effect}";
-            })
-            .AddTo(gameObject);
     }
 }

@@ -9,13 +9,13 @@ using System.Collections.Generic;
 
 public class Gauge : MonoBehaviour
 {
-    public float volume;
     public Color error = new Color(0xD1, 0x3C, 0x3C);
 
     // Start is called before the first frame update
     void Start()
     {
-        var elements = GetComponentsInChildren<GaugeElement>();
+        var elements = GetComponentsInChildren<GaugeElement>()
+            .Where(g => g.gameObject != gameObject);
         var image = GetComponent<Image>();
         var baseColor = image.color;
 
@@ -23,13 +23,14 @@ public class Gauge : MonoBehaviour
             .EveryUpdate()
             .Subscribe(_ => {
                 float unitLength = GetComponent<RectTransform>().sizeDelta.x - GetComponent<HorizontalLayoutGroup>().padding.horizontal;
+                var volume = GetComponent<GaugeElement>().volume;
 
-                foreach(var e in elements)
+                foreach (var e in elements)
                 {
                     e.Length = e.volume / volume * unitLength;
                 }
-
-                image.color = elements.Select(e => e.volume).Sum() > volume ? error : baseColor;
+                
+                image.color = elements.Sum(e => e.volume) > volume ? error : baseColor;
             })
             .AddTo(gameObject);
     }

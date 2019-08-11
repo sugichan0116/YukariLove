@@ -172,7 +172,8 @@ GameObject:
   - component: {fileID: 1873830942786323280}
   - component: {fileID: 1873830942786323281}
   - component: {fileID: 4114353745672823336}
-  - component: {fileID: 1906559602986410446}
+  - component: {fileID: 4653045512413701417}
+  - component: {fileID: 5331160502989746260}
   m_Layer: 0
   m_Name: card
   m_TagString: Untagged
@@ -259,7 +260,25 @@ MonoBehaviour:
   selected: 0
   cardData: {fileID: 11400000, guid: 1998c5923bdaad049bb0cecb26dc89aa, type: 2}
   effects: []
---- !u!114 &1906559602986410446
+--- !u!114 &4653045512413701417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873830942786323283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4e47a52129c92468054ca9a8d2cd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  product: {fileID: 7729963227913142786}
+  icon: {fileID: 2922831993651084840}
+  type: {fileID: 1873830942980801742}
+  love: {fileID: 8528075714640281315}
+  price: {fileID: 5326520125478797697}
+  effect: {fileID: 1873830944824489278}
+--- !u!114 &5331160502989746260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,14 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cover: {fileID: 3364239470226440974}
   sfx_hover: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
-  sfx_click: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
-  product: {fileID: 7729963227913142786}
-  icon: {fileID: 2922831993651084840}
-  type: {fileID: 1873830942980801742}
-  love: {fileID: 8528075714640281315}
-  loveplus: {fileID: 7378748917963541664}
-  price: {fileID: 5326520125478797697}
-  effect: {fileID: 1873830944824489278}
+  sfx_click: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
 --- !u!1 &1873830942980801736
 GameObject:
   m_ObjectHideFlags: 0

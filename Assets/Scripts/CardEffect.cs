@@ -22,7 +22,8 @@ public class CardEffect : ScriptableObject
     {
         ALL,
         OTHER,
-        GROUP
+        GROUP,
+        PRICE
     }
 
     public enum BonusType
@@ -53,6 +54,8 @@ public class CardEffect : ScriptableObject
                 return $"他の{target}に ";
             case Conditions.GROUP:
                 return $"もし{target}が{conditionVolume}枚以上なら";
+            case Conditions.PRICE:
+                return $"価格が${conditionVolume}以上の{target}に";
         }
 
         return $"Error";
