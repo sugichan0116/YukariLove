@@ -7540,6 +7540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   work: {fileID: 580898008}
+  sfx_click: {fileID: 8300000, guid: 6e8772b49f34d402a90016ed445d8a2f, type: 3}
+  sfx_click2: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
 --- !u!114 &1285920429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7879,7 +7881,7 @@ MonoBehaviour:
   love: 0
   needLove: 300
   loveProgress: 0
-  level: 10
+  level: 1
   day: 1
   message: "\u30DE\u30B9\u30BF\u30FC\u5927\u597D\u304D\uFF01"
   IsNotWorked: 0
@@ -11483,6 +11485,8 @@ MonoBehaviour:
   cardCase: {fileID: 561549155}
   resultCardCase: {fileID: 157229843}
   IsClicked: 0
+  sfx_click: {fileID: 8300000, guid: 6e8772b49f34d402a90016ed445d8a2f, type: 3}
+  sfx_click2: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
 --- !u!114 &1953197141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11730,6 +11734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardCase: {fileID: 561549158}
+  sfx_click: {fileID: 8300000, guid: 6e8772b49f34d402a90016ed445d8a2f, type: 3}
 --- !u!114 &1978156113
 MonoBehaviour:
   m_ObjectHideFlags: 0

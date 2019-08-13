@@ -6,13 +6,17 @@ using UniRx.Triggers;
 using DG.Tweening;
 using System.Linq;
 using System;
+using Hellmade.Sound;
 
 public class Replacer : MonoBehaviour
 {
     public CardList cardCase;
-    
+    public AudioClip sfx_click;
+
     public void ApplyReplacement()
     {
+        EazySoundManager.PlayUISound(sfx_click);
+
         var deck = FindObjectOfType<Deck>();
         var selectedHolder = cardCase.GetComponentsInChildren<CardHolder>()
             .Where(holder => holder.GetComponentInChildren<Card>().selected);

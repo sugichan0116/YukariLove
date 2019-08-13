@@ -6,6 +6,7 @@ using UniRx.Triggers;
 using DG.Tweening;
 using System.Linq;
 using System;
+using Hellmade.Sound;
 
 public class PresentManager : MonoBehaviour
 {
@@ -13,9 +14,14 @@ public class PresentManager : MonoBehaviour
     public GameObject cardCase;
     public GameObject resultCardCase;
     public bool IsClicked;
-    
+
+    public AudioClip sfx_click;
+    public AudioClip sfx_click2;
+
     public void AwakePresentWindow()
     {
+        EazySoundManager.PlayUISound(sfx_click);
+
         var player = FindObjectOfType<Player>();
 
         //show result
@@ -62,6 +68,8 @@ public class PresentManager : MonoBehaviour
 
     public void ApplyPresent()
     {
+        EazySoundManager.PlayUISound(sfx_click2);
+
         var player = FindObjectOfType<Player>();
         var statics = player.GetComponent<CardStatistic>();
         player.money -= statics.SumPrice();
