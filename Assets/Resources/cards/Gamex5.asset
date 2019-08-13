@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7a1a26f835e571409461e0ae2001744, type: 3}
-  m_Name: Gamex2
+  m_Name: Gamex5
   m_EditorClassIdentifier: 
-  condition: 0
-  conditionVolume: 0
-  targetType: 2
+  condition: 3
+  conditionVolume: 100
+  targetType: 0
   bonus: 1
   priority: 1
-  bonusVolume: 1.5
+  bonusVolume: 5

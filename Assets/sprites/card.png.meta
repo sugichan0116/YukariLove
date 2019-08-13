@@ -4,6 +4,8 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: card_0
     21300002: card_1
+    21300004: card_2
+    21300006: card_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -94,7 +96,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 25, y: 26, z: 27, w: 25}
       outline: []
       physicsShape: []
@@ -114,13 +116,53 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 24, y: 29, z: 25, w: 24}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: d8660186e1b0f4a43a7ea8074b37d290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 21, y: 29, z: 25, w: 24}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02dde961814710428659c00ab93f1b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 22, y: 29, z: 24, w: 24}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea82719586b4ea747855b625eb4362b1
       vertices: []
       indices: 
       edges: []

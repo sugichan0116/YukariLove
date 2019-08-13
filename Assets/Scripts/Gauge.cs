@@ -24,10 +24,20 @@ public class Gauge : MonoBehaviour
             .Subscribe(_ => {
                 float unitLength = GetComponent<RectTransform>().sizeDelta.x - GetComponent<HorizontalLayoutGroup>().padding.horizontal;
                 var volume = GetComponent<GaugeElement>().volume;
+                if (volume <= 0f) return;
+                var resource = volume;
 
                 foreach (var e in elements)
                 {
-                    e.Length = e.volume / volume * unitLength;
+                    if (resource < 0) break;
+                    if(resource - e.volume < 0) {
+                        e.Length = resource / volume * unitLength;
+                    }
+                    else
+                    {
+                        e.Length = e.volume / volume * unitLength;
+                        resource -= e.volume;
+                    }
                 }
                 
                 image.color = elements.Sum(e => e.volume) > volume ? error : baseColor;

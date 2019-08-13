@@ -23,5 +23,7 @@ public class GaugeElement : MonoBehaviour
                 rect.DOSizeDelta(new Vector2(Length, offset.y), 0.1f);
                 text.text = (volume > 0) ? $"{volume}" : "";
             });
+
+        text.text = "";
     }
 }

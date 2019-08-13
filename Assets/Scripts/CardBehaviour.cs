@@ -13,11 +13,13 @@ public class CardBehaviour : MonoBehaviour
 
     public AudioClip sfx_hover;
     public AudioClip sfx_click;
+
+    private Card card;
     
     // Start is called before the first frame update
     void Start()
     {
-        var card = GetComponent<Card>();
+        card = GetComponent<Card>();
         var cardData = card.cardData;
         var trigger = GetComponent<ObservableEventTrigger>();
 
@@ -44,5 +46,11 @@ public class CardBehaviour : MonoBehaviour
                 if(card.selected) EazySoundManager.PlayUISound(sfx_click);
             });
 
+    }
+    
+    public void Select()
+    {
+        card.selected = !card.selected;
+        cover.SetActive(card.selected);
     }
 }

@@ -19,6 +19,14 @@ public class CardData : ScriptableObject
         BOOK
     }
 
+    public enum RareLity
+    {
+        COMMON,
+        UNCOMMON,
+        RARE,
+        SUPER_RARE
+    }
+
     public string product;
     [ShowAssetPreview(128, 128)]
     public Sprite icon;
@@ -27,6 +35,7 @@ public class CardData : ScriptableObject
     public CardType type;
     public int love;
     public int price;
+    public RareLity rarelity;
     public CardEffect effect;
     
 }

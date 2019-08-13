@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c450936a069e8d44898a7ffbc1e41c7c, type: 3}
-  m_Name: Sword
+  m_Name: Wii
   m_EditorClassIdentifier: 
-  product: Sowrd
-  icon: {fileID: 21300000, guid: 03dd1ef6fb163214c9e1ac0242dab3ba, type: 3}
+  product: Wii
+  icon: {fileID: 21300036, guid: 03dd1ef6fb163214c9e1ac0242dab3ba, type: 3}
   type: 2
-  love: 85
-  price: 180
-  effect: {fileID: 11400000, guid: eb21d484a3366de4d94a740e14ea1d27, type: 2}
+  love: 80
+  price: 300
+  rarelity: 1
+  effect: {fileID: 11400000, guid: 5017a87bc600ffc43a58b38d30cc7fe0, type: 2}
