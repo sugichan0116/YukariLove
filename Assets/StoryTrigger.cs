@@ -31,8 +31,6 @@ public class StoryTrigger : BooleanByField
                     .Take(take)
                     .Subscribe(_ =>
                     {
-                        Debug.Log($"Story Fired {this} // {_} // {take}");
-
                         publisher
                             .onTrigger
                             .OnNext(story);

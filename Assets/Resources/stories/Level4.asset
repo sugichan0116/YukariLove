@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac3c91f98c76f34eb5b01b2cf994fbd, type: 3}
+  m_Name: Level4
+  m_EditorClassIdentifier: 
+  messages:
+  - speaker: 0
+    text: "\u306F\u3044\n\u3086\u304B\u308A\u3055\u3093"
+  - speaker: 1
+    text: "\u6B32\u3057\u304B\u3063\u305F\u3084\u3064\u3060"
+  - speaker: 1
+    text: "\u3042\u308A\u304C\u3068\u3046\n\u307E\u3059\u305F\u30FC"
+  - speaker: 1
+    text: "\u79C1\u3044\u3063\u3071\u3044\u304B\u307E\u3063\u3066\n\u304F\u308C\u308B\u306E\u3067\u5E78\u305B\u3067\u3059"
+  - speaker: 1
+    text: "\uFF08\u306B\u3053\u306B\u3053\uFF09"
+  - speaker: 0
+    text: "\u3075\u304A\u304A\u304A\u304A\u304A\u304A\u304A\n\uFF08\u7D66\u6599\u304C\u5897\u3048\u305F\uFF09"
