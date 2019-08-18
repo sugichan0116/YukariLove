@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: allx2
   m_EditorClassIdentifier: 
   condition: 2
-  conditionVolume: 3
-  targetType: 2
+  conditionVolume: 4
+  targetType: 0
   bonus: 1
   priority: 1
-  bonusVolume: 2
+  bonusVolume: 3

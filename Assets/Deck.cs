@@ -19,7 +19,7 @@ public class Deck : MonoBehaviour
 
         foreach(var card in cardLibrary)
         {
-            Debug.Log($"{card}");
+            //Debug.Log($"{card}");
         }
     }
 
@@ -51,6 +51,6 @@ public class Deck : MonoBehaviour
 
     public float RarelityWeight(CardData.RareLity rare)
     {
-        return (int)rare + 1;
+        return 5 - (int)rare;
     }
 }

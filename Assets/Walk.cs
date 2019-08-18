@@ -34,7 +34,6 @@ public class Walk : MonoBehaviour
             .Subscribe(_ =>
             {
                 velocity = (int)UnityEngine.Random.Range(-2f, 2f);
-                Debug.Log($"ok{velocity} {velocity > 0}");
             })
             .AddTo(gameObject);
         

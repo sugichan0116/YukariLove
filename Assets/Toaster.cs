@@ -8,7 +8,7 @@ using System.Linq;
 using System;
 
 [RequireComponent(typeof(UIField))]
-public class Toaster : MonoBehaviour
+public class BooleanByField : MonoBehaviour
 {
     public enum Type
     {
@@ -25,10 +25,10 @@ public class Toaster : MonoBehaviour
     public Type type;
     public TriggerType trigger;
     public float threshold;
-    public Toast toast;
+    public Subject<bool> onJudge = new Subject<bool>();
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         GetComponent<UIField>()
             .onChanged
@@ -36,27 +36,45 @@ public class Toaster : MonoBehaviour
             {
                 if(type == Type.BOOL)
                 {
-                    toast.gameObject.SetActive(Convert.ToBoolean(v));
+                    onJudge.OnNext(Convert.ToBoolean(v));
                 }
                 if(type == Type.FLOAT)
                 {
-                    toast.gameObject.SetActive(Judge(Convert.ToSingle(v), threshold));
+                    onJudge.OnNext(Judge(Convert.ToSingle(v), threshold));
                 }
-                
             });
     }
 
-    public bool Judge(float a, float b)
+    public bool Judge<T>(T a, T b) where T : IComparable
     {
-        switch(trigger)
+        var r = a.CompareTo(b);
+
+        switch (trigger)
         {
             case TriggerType.EQUAL:
-                return a == b;
+                return r == 0;
             case TriggerType.GREATER:
-                return a > b;
+                return r > 0;
             case TriggerType.LESS:
-                return a < b;
+                return r < 0;
         }
         return false;
+    }
+}
+
+public class Toaster : BooleanByField
+{
+    public Toast toast;
+
+    // Start is called before the first frame update
+    new void Start()
+    {
+        base.Start();
+
+        onJudge
+            .Subscribe(result =>
+            {
+                toast.gameObject.SetActive(result);
+            });
     }
 }

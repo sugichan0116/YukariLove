@@ -14,18 +14,29 @@ public class Message : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var onFade = new Subject<Unit>();
+
         FindObjectOfType<Player>()
             .ObserveEveryValueChanged(p => p.message)
             .Subscribe(m => {
                 window.SetActive(true);
+                window.transform.DOPunchScale(Vector3.one * .3f, 0.3f);
                 text.text = m;
 
                 Observable
-                    .Timer(TimeSpan.FromSeconds(6))
+                    .Timer(TimeSpan.FromSeconds(1))
                     .Subscribe(_ =>
                     {
-                        window.SetActive(false);
+                        onFade.OnNext(new Unit());
                     });
+            });
+
+        onFade
+            .Throttle(TimeSpan.FromSeconds(3))
+            .Subscribe(_ =>
+            {
+                window.transform.localScale = Vector3.one;
+                window.SetActive(false);
             });
     }
 }

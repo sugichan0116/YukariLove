@@ -92,6 +92,9 @@ public class CardEffect : ScriptableObject
         return $"{TargetToString()} {BonusToString()}";
     }
 
+
+    // ここからエディター上でのみ有効
+#if UNITY_EDITOR
     [CustomEditor(typeof(CardEffect))]
     public class CardEffectEditor : Editor
     {
@@ -107,4 +110,7 @@ public class CardEffect : ScriptableObject
             EditorGUI.EndDisabledGroup();
         }
     }
+    // ここまでエディター上でのみ有効
+#endif
+
 }

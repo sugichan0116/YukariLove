@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
                 message = "LoveUP!\nマスター好き！";
                 love -= needLove;
                 needLove *= 3;
-                salary += 100 * level;
+                salary += 100 + ((level%2==0) ? 50 : 0);
                 level++;
             })
             .AddTo(gameObject);
