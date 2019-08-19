@@ -23,6 +23,7 @@ public class LoveBehaviour : MonoBehaviour
             {
                 particle.Play();
                 EazySoundManager.PlayUISound(sfx);
-            });
+            })
+            .AddTo(this);
     }
 }

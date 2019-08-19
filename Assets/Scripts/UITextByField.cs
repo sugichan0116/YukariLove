@@ -15,6 +15,7 @@ public class UITextByField : MonoBehaviour
         GetComponent<UIField>().onChanged
             .Subscribe(value => {
                 GetComponent<TextMeshProUGUI>().text = $"{prefix}{value}{suffix}";
-            });
+            })
+            .AddTo(this);
     }
 }

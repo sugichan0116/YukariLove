@@ -16,6 +16,8 @@ public class TextAnimation : MonoBehaviour
     public float duration = 0.2f;
     public AnimationType type;
 
+    private Sequence sequence;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,27 +26,34 @@ public class TextAnimation : MonoBehaviour
             .ObserveEveryValueChanged(t => t.text)
             .Subscribe(_ =>
             {
-                Sequence seq = DOTween.Sequence();
+                if (sequence != null) sequence.Kill();
+                sequence = DOTween.Sequence();
 
                 switch (type)
                 {
                     case AnimationType.SHAKE_ROTATION:
-                        seq
-                        .Append(transform.DOShakeRotation(duration))
-                        .OnComplete(() => {
-                            transform.rotation = Quaternion.Euler(Vector3.zero);
-                        });
+                        sequence
+                            .Append(transform.DOShakeRotation(duration))
+                            .OnComplete(() => {
+                                transform.rotation = Quaternion.Euler(Vector3.zero);
+                            });
                         
                         break;
                     case AnimationType.SHAKE_SCALE:
-                        seq
-                        .Append(transform.DOShakeScale(duration))
-                        .OnComplete(() => {
-                            transform.localScale = Vector3.one;
-                        });
+                        sequence
+                            .Append(transform.DOShakeScale(duration))
+                            .OnComplete(() => {
+                                transform.localScale = Vector3.one;
+                            });
 
                         break;
                 }
-            });
+            })
+            .AddTo(this);
+    }
+
+    private void OnDestroy()
+    {
+        sequence.Kill();
     }
 }

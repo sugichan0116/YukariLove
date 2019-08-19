@@ -28,8 +28,10 @@ public class Message : MonoBehaviour
                     .Subscribe(_ =>
                     {
                         onFade.OnNext(new Unit());
-                    });
-            });
+                    })
+                    .AddTo(this);
+            })
+            .AddTo(this);
 
         onFade
             .Throttle(TimeSpan.FromSeconds(3))
@@ -37,6 +39,7 @@ public class Message : MonoBehaviour
             {
                 window.transform.localScale = Vector3.one;
                 window.SetActive(false);
-            });
+            })
+            .AddTo(this);
     }
 }

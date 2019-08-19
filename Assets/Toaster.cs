@@ -42,7 +42,8 @@ public class BooleanByField : MonoBehaviour
                 {
                     onJudge.OnNext(Judge(Convert.ToSingle(v), threshold));
                 }
-            });
+            })
+            .AddTo(this);
     }
 
     public bool Judge<T>(T a, T b) where T : IComparable
@@ -75,6 +76,7 @@ public class Toaster : BooleanByField
             .Subscribe(result =>
             {
                 toast.gameObject.SetActive(result);
-            });
+            })
+            .AddTo(this);
     }
 }

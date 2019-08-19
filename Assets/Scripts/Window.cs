@@ -19,6 +19,7 @@ public class Window : MonoBehaviour
             .Subscribe(_ => {
                 onClose.OnNext(Unit.Default);
                 gameObject.SetActive(false);
-            });
+            })
+            .AddTo(this);
     }
 }

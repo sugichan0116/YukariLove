@@ -224,17 +224,18 @@ namespace Hellmade.Sound
                     audioDict.Remove(key);
                 }
             }
-
+            
             // Go through all audios in the audio pool and remove them if they should not persist through scenes
             keys = new List<int>(audioPool.Keys);
             foreach (int key in keys)
             {
-                Audio audio = audioDict[key];
+                Audio audio = audioPool[key];
                 if (!audio.Persist && audio.Activated)
                 {
                     audioPool.Remove(key);
                 }
             }
+            
         }
 
         /// <summary>

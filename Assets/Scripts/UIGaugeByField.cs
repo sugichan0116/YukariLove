@@ -10,13 +10,15 @@ public class UIGaugeByField : MonoBehaviour
     {
         var e = GetComponent<GaugeElement>();
 
-        GetComponent<UIField>().onChanged
+        GetComponent<UIField>()
+            .onChanged
             .Subscribe(value => {
                 if(value is ValueType v)
                 {
                     var i = float.Parse(v.ToString());
                     e.volume = i;
                 }
-            });
+            })
+            .AddTo(this);
     }
 }

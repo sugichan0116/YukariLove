@@ -30,13 +30,15 @@ public class CardBehaviour : MonoBehaviour
             .Subscribe(_ => {
                 transform.DOLocalMoveY(delta + offset, 0.1f);
                 EazySoundManager.PlayUISound(sfx_hover);
-            });
+            })
+            .AddTo(this);
 
         trigger
             .OnPointerExitAsObservable()
             .Subscribe(_ => {
                 transform.DOLocalMoveY(offset, 0.1f);
-            });
+            })
+            .AddTo(this);
 
         trigger
             .OnPointerClickAsObservable()
@@ -44,7 +46,8 @@ public class CardBehaviour : MonoBehaviour
                 card.selected = !card.selected;
                 cover.SetActive(card.selected);
                 if(card.selected) EazySoundManager.PlayUISound(sfx_click);
-            });
+            })
+            .AddTo(this);
 
     }
     

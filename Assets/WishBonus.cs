@@ -25,7 +25,8 @@ public class WishBonus : MonoBehaviour
             .Subscribe(_ =>
             {
                 cardlist.foreignEffects.Add(effects[index]);
-            });
+            })
+            .AddTo(this);
 
         this
             .ObserveEveryValueChanged(wb => wb.index)

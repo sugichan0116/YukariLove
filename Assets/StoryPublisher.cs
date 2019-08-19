@@ -19,7 +19,7 @@ public class StoryPublisher : MonoBehaviour
         onTrigger
             .Subscribe(story =>
             {
-                Debug.Log($"Story Publishing... {this} {story}");
+                //Debug.Log($"Story Publishing... {this} {story}");
 
                 storyWindow.gameObject.SetActive(true);
                 manager.PostStory(story);
@@ -28,11 +28,14 @@ public class StoryPublisher : MonoBehaviour
                     .Subscribe(_ => {
                         storyWindow.gameObject.SetActive(false);
                         onClosed.OnNext(Unit.Default);
-                    });
-            });
+                    })
+                    .AddTo(this);
+            })
+            .AddTo(this);
 
         storyWindow
             .onClose
-            .Subscribe(_ => onClosed.OnNext(Unit.Default));
+            .Subscribe(_ => onClosed.OnNext(Unit.Default))
+            .AddTo(this);
     }
 }

@@ -34,7 +34,8 @@ public class StoryTrigger : BooleanByField
                         publisher
                             .onTrigger
                             .OnNext(story);
-                    });
+                    })
+                    .AddTo(this);
             })
             .AddTo(this);
         
