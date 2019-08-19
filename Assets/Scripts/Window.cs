@@ -22,4 +22,9 @@ public class Window : MonoBehaviour
             })
             .AddTo(this);
     }
+    
+    public void ActiveWindow()
+    {
+        gameObject.SetActive(true);
+    }
 }
