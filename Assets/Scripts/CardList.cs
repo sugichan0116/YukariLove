@@ -5,32 +5,53 @@ using System.Collections.Generic;
 
 public class CardList : MonoBehaviour
 {
+    public class CardAggregate
+    {
+        public Card[] cards, selects;
+    }
+
     public Subject<int> onUpdateEffect = new Subject<int>();
-    public List<CardEffect> foreignEffects;
+    public List<CardEffect> foreignEffects = new List<CardEffect>();
 
     // Start is called before the first frame update
     void Start()
     {
+        var onChangeCard = new Subject<CardAggregate>();
+
         Observable
             .EveryUpdate()
-            .Subscribe(_ =>
+            .Select(_ => GetComponentsInChildren<Card>())
+            .Select(cards => new CardAggregate {
+                cards = cards,
+                selects = cards.Where(card => card.selected).ToArray()
+            })
+            .DistinctUntilChanged(a => (a.cards.Count(), a.selects.Count()))
+            .Subscribe(result => {
+                onChangeCard.OnNext(result);
+            })
+            .AddTo(this);
+
+        onChangeCard
+            .Subscribe(aggregate =>
             {
-                foreignEffects = new List<CardEffect>();
+                foreignEffects.Clear();
                 onUpdateEffect.OnNext(0);
 
-                var cards = FindObjectsOfType<Card>();
-                var selectedCards = cards.Where(card => card.selected);
-                var innerEffectors = selectedCards.Select(card => {
-                    return new CardEffector()
-                    {
-                        effect = card.cardData.effect,
-                        self = card.cardData,
-                        cards = cards,
-                        selectedCards = selectedCards
-                    };
-                });
+                var cards = aggregate.cards;
+                var selectedCards = aggregate.selects;
 
-                var foreign = foreignEffects.Select(effect =>
+                var innerEffectors = selectedCards.Select(card => 
+                    {
+                        return new CardEffector()
+                        {
+                            effect = card.cardData.effect,
+                            self = card.cardData,
+                            cards = cards,
+                            selectedCards = selectedCards
+                        };
+                    });
+
+                var foreignEffectors = foreignEffects.Select(effect =>
                     {
                         return new CardEffector()
                         {
@@ -40,10 +61,12 @@ public class CardList : MonoBehaviour
                         };
                     });
 
-                var effectors = innerEffectors.Concat(foreign)
+                //Debug.Log($"[Card List] inner({innerEffectors.Count()}) " +
+                //    $"foreign({foreignEffectors.Count()}) in {this}");
+
+                var effectors = innerEffectors.Concat(foreignEffectors)
                     .OrderBy(effector => effector.effect.priority);
-
-
+                
 
                 foreach (var card in cards)
                 {
@@ -59,5 +82,10 @@ public class CardList : MonoBehaviour
                 }
             })
             .AddTo(gameObject);
+    }
+
+    public void PushEffect(CardEffect effect)
+    {
+        foreignEffects.Add(effect);
     }
 }

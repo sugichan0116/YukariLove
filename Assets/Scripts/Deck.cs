@@ -5,22 +5,12 @@ public class Deck : MonoBehaviour
 {
     public Card card;
     public CardHolder holder;
-    public CardData cardData;
     public CardData[] cardLibrary;
-
-    public float[] weights;
-
-    private System.Random rand = new System.Random();
 
     // Start is called before the first frame update
     void Start()
     {
         cardLibrary = Resources.LoadAll<CardData>("cards/");
-
-        foreach(var card in cardLibrary)
-        {
-            //Debug.Log($"{card}");
-        }
     }
 
     public GameObject DrawCard()
@@ -46,7 +36,7 @@ public class Deck : MonoBehaviour
         }
 
         Debug.LogError($"error {totalWeight} // {dropValue} // {box.Count()}");
-        return null; //box.ElementAt(rand.Next(box.Count()));
+        return null;
     }
 
     public float RarelityWeight(CardData.RareLity rare)

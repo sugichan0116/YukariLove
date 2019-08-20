@@ -8,10 +8,23 @@ using System;
 
 public class WishBonus : MonoBehaviour
 {
-    public Sprite[] sprites;
-    public CardEffect[] effects;
-    public int index;
+    [Serializable]
+    public class WishEffect
+    {
+        public Sprite icon;
+        public CardEffect effect;
+    }
 
+    //public Sprite[] sprites;
+    //public CardEffect[] effects;
+    public WishEffect[] wishes;
+    private int index;
+
+    [Range(0, 1)]
+    public float probability;
+
+    [Header("UI")]
+    public GameObject content;
     public TextMeshProUGUI text;
     public Image image;
 
@@ -22,17 +35,33 @@ public class WishBonus : MonoBehaviour
         
         cardlist
             .onUpdateEffect
+            .Where(_ => index >= 0)
             .Subscribe(_ =>
             {
-                cardlist.foreignEffects.Add(effects[index]);
+                cardlist.PushEffect(wishes[index].effect);
             })
             .AddTo(this);
 
         this
             .ObserveEveryValueChanged(wb => wb.index)
             .Subscribe(index => {
-                text.text = $"{effects[index]}";
-                image.sprite = sprites[index];
+                content.gameObject.SetActive(index >= 0);
+
+                if (index < 0) return;
+                text.text = $"{wishes[index].effect}";
+                image.sprite = wishes[index].icon;
             });
+
+        var random = new System.Random();
+
+        FindObjectOfType<Player>()
+            .ObserveEveryValueChanged(p => p.day)
+            .Where(day => day % 7 == 0)
+            .Subscribe(_ =>
+            {
+                index = (UnityEngine.Random.value <= probability) 
+                    ? random.Next(wishes.Length) : -1;
+            })
+            .AddTo(this);
     }
 }
