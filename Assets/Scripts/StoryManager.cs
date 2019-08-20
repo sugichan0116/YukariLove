@@ -6,13 +6,14 @@ using UniRx.Triggers;
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 [RequireComponent(typeof(ObservableEventTrigger))]
 public class StoryManager : MonoBehaviour
 {
     public MessageBox master, yukari, blank;
-    //public Story story;
-    public Queue<Story> stories = new Queue<Story>();
+    public GameObject[] portraits;
+    public Stack<Story> stories = new Stack<Story>();
 
     public Subject<Unit> onNextMessage = new Subject<Unit>();
     public Subject<Unit> onFinishStory = new Subject<Unit>();
@@ -34,12 +35,13 @@ public class StoryManager : MonoBehaviour
                     var message = stories.Peek().messages[index++];
                     var box = PushMessageBox(MessageBox(message.speaker));
                     box.text.text = message.text;
+                    UpdatePortrait(message.portrait);
                     onNextMessage.OnNext(Unit.Default);
                 }
                 else
                 {
                     index = 0;
-                    stories.Dequeue();
+                    stories.Pop();
                     PushMessageBox(blank);
                     if (stories.Count == 0)
                     {
@@ -61,7 +63,7 @@ public class StoryManager : MonoBehaviour
 
     public void PostStory(Story story)
     {
-        stories.Enqueue(story);
+        stories.Push(story);
         //this.story = story;
     }
 
@@ -73,10 +75,28 @@ public class StoryManager : MonoBehaviour
                 return master;
             case Speaking.Speaker.YUKARI:
                 return yukari;
+            default:
+                Debug.LogError("error");
+                return null;
         }
+    }
 
-        Debug.LogError("error");
-        return null;
+    private void UpdatePortrait(Speaking.Portrait index)
+    {
+        //Enumerable
+        //    .Range(0, portraits.Length)
+        //    .Zip(portraits, )
+        //    .ToObservable()
+        //    .Select(i => (i, item:portraits[i]))
+        //    .Subscribe(p =>
+        //    {
+        //        p.item.SetActive(p.i == (int)index);
+        //    });
+
+        for(int i = 0; i < portraits.Length; i++)
+        {
+            portraits[i].SetActive(i == (int)index);
+        }
     }
 
 

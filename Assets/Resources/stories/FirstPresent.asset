@@ -14,12 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - speaker: 0
+    portrait: 1
     text: "\u306F\u3044\n\u3086\u304B\u308A\u3055\u3093"
   - speaker: 1
+    portrait: 1
     text: "\u3053\u308C\u3092\u304F\u308C\u308B\u3093\u3067\u3059\u304B\uFF1F"
   - speaker: 1
+    portrait: 2
     text: "\u3084\u3063\u305F\uFF01\n\u3042\u308A\u304C\u3068\u3046"
   - speaker: 0
+    portrait: 2
     text: "\u3086\u304B\u308A\u3055\u3093\u2026\u2026\uFF01"
   - speaker: 0
+    portrait: 2
     text: "\uFF08\u304A\u91D1\u3092\u7A3C\u3044\u3067\u3082\u3063\u3068\n\u3086\u304B\u308A\u3055\u3093\u306B\u30D7\u30EC\u30BC\u30F3\u30C8\u3059\u308B\u305E\uFF09\n"

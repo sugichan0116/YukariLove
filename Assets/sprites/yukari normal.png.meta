@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 3b6d2b0ee3401f54f850bbb6afebfcf4
+guid: cb5b5690aa3cd9847b9ab9345dc9ce33
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\u30A4\u30E9\u30B9\u30C8124-wa_0"
+    21300000: yukari normal_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -96,7 +96,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30A4\u30E9\u30B9\u30C8124-wa_0"
+      name: yukari normal_0
       rect:
         serializedVersion: 2
         x: 151
@@ -110,7 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b22702f1370f8724c84a02a003c4e10a
+      spriteID: d2601906d83d9f743b482ed8d43321c3
       vertices: []
       indices: 
       edges: []
@@ -118,7 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 67d3d4efc7dae9c4f855a7b1e99821d3
+    spriteID: 1797dc54ee58b4b4ea3965d8889ffb77
     vertices: []
     indices: 
     edges: []

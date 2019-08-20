@@ -23,7 +23,17 @@ public class Speaking
         YUKARI
     }
 
+    public enum Portrait
+    {
+        NONE,
+        STAND,
+        SMILE,
+        ANGRY,
+        LOVE
+    }
+
     public Speaker speaker;
+    public Portrait portrait = Portrait.STAND;
     [TextArea]
     public string text;
 
