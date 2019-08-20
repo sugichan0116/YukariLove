@@ -1,24 +1,25 @@
 ﻿using UnityEngine;
 using UniRx;
-using TMPro;
-using UnityEngine.UI;
 using UniRx.Triggers;
-using DG.Tweening;
-using Hellmade.Sound;
+using UnityEngine.Events;
 
 public class Window : MonoBehaviour
 {
-    public ObservableEventTrigger target;
     public Subject<Unit> onClose = new Subject<Unit>();
+    public UnityEvent onWindowOpen = new UnityEvent();
+    public UnityEvent onWindowClose = new UnityEvent();
+
+    [Header("Close Area")]
+    public ObservableEventTrigger outRegion;
 
     // Start is called before the first frame update
     void Start()
     {
-        target
+        outRegion
             .OnPointerClickAsObservable()
             .Subscribe(_ => {
                 onClose.OnNext(Unit.Default);
-                gameObject.SetActive(false);
+                InactiveWindow();
             })
             .AddTo(this);
     }
@@ -26,5 +27,12 @@ public class Window : MonoBehaviour
     public void ActiveWindow()
     {
         gameObject.SetActive(true);
+        onWindowOpen.Invoke();
+    }
+
+    public void InactiveWindow()
+    {
+        onWindowClose.Invoke();
+        gameObject.SetActive(false);
     }
 }
