@@ -1,18 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UniRx;
+using TMPro;
+using UnityEngine.UI;
+using UniRx.Triggers;
+using DG.Tweening;
+using Hellmade.Sound;
+using System;
 
-public class Ending : MonoBehaviour
+public class Ending : BooleanByField
 {
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
-        
-    }
+        base.Start();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        var manager = FindObjectOfType<ResultManager>();
+
+        onJudge
+            .Where(result => result)
+            .Take(1)
+            .Subscribe(_ =>
+            {
+                manager
+                    .onEnding
+                    .OnNext(Unit.Default);
+            })
+            .AddTo(this);
     }
 }

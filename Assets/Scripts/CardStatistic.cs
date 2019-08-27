@@ -11,10 +11,12 @@ public class CardStatistic : MonoBehaviour
         LOVE,
         MONEY,
         DEFICIT,
-        CARDS
+        CARDS,
+        @_OBSERVER
     }
 
     public CardProperty property;
+    public float price, love;
 
     // Start is called before the first frame update
     void Start()
@@ -28,19 +30,22 @@ public class CardStatistic : MonoBehaviour
             .EveryUpdate()
             .Subscribe(_ =>
             {
-                switch(property)
+                price = SumPrice();
+                love = SumLove();
+
+                switch (property)
                 {
                     case CardProperty.PRICE:
-                        element.volume = SumPrice();
+                        element.volume = price;
                         break;
                     case CardProperty.LOVE:
-                        element.volume = SumLove();
+                        element.volume = love;
                         break;
                     case CardProperty.MONEY:
-                        element.volume = Mathf.Max(0, player.money - SumPrice());
+                        element.volume = Mathf.Max(0, player.money - price);
                         break;
                     case CardProperty.DEFICIT:
-                        element.volume = Mathf.Max(0, -player.money + SumPrice());
+                        element.volume = Mathf.Max(0, -player.money + price);
                         break;
                 }
                 

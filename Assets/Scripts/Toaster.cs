@@ -19,7 +19,10 @@ public class BooleanByField : MonoBehaviour
     public enum TriggerType {
         EQUAL,
         GREATER,
-        LESS
+        LESS,
+        GREATER_EQUAL,
+        LESS_EQUAL,
+        NOT_EQUAL
     }
 
     public Type type;
@@ -58,6 +61,12 @@ public class BooleanByField : MonoBehaviour
                 return r > 0;
             case TriggerType.LESS:
                 return r < 0;
+            case TriggerType.GREATER_EQUAL:
+                return r >= 0;
+            case TriggerType.LESS_EQUAL:
+                return r <= 0;
+            case TriggerType.NOT_EQUAL:
+                return r != 0;
         }
         return false;
     }

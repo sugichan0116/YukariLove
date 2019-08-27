@@ -1,12 +1,4 @@
-﻿using UnityEngine;
-using UniRx;
-using TMPro;
-using UnityEngine.UI;
-using UniRx.Triggers;
-using DG.Tweening;
-using Hellmade.Sound;
-using System;
-
+﻿using UniRx;
 
 public class StoryTrigger : BooleanByField
 {

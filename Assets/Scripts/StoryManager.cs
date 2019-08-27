@@ -13,10 +13,11 @@ public class StoryManager : MonoBehaviour
 {
     public MessageBox master, yukari, blank;
     public GameObject[] portraits;
-    public Stack<Story> stories = new Stack<Story>();
+    public Queue<Story> stories = new Queue<Story>();
 
     public Subject<Unit> onNextMessage = new Subject<Unit>();
     public Subject<Unit> onFinishStory = new Subject<Unit>();
+    private Subject<Unit> onClear = new Subject<Unit>();
     
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,7 @@ public class StoryManager : MonoBehaviour
                 else
                 {
                     index = 0;
-                    stories.Pop();
+                    stories.Dequeue();
                     PushMessageBox(blank);
                     if (stories.Count == 0)
                     {
@@ -50,6 +51,13 @@ public class StoryManager : MonoBehaviour
                 }
             })
             .AddTo(this);
+
+        onClear
+            .Subscribe(_ => {
+                index = 0;
+                stories.Clear();
+                PushMessageBox(blank);
+            });
     }
 
     private MessageBox PushMessageBox(MessageBox prefab)
@@ -63,8 +71,7 @@ public class StoryManager : MonoBehaviour
 
     public void PostStory(Story story)
     {
-        stories.Push(story);
-        //this.story = story;
+        stories.Enqueue(story);
     }
 
     private MessageBox MessageBox(Speaking.Speaker speaker)
@@ -83,21 +90,15 @@ public class StoryManager : MonoBehaviour
 
     private void UpdatePortrait(Speaking.Portrait index)
     {
-        //Enumerable
-        //    .Range(0, portraits.Length)
-        //    .Zip(portraits, )
-        //    .ToObservable()
-        //    .Select(i => (i, item:portraits[i]))
-        //    .Subscribe(p =>
-        //    {
-        //        p.item.SetActive(p.i == (int)index);
-        //    });
-
         for(int i = 0; i < portraits.Length; i++)
         {
             portraits[i].SetActive(i == (int)index);
         }
     }
 
+    public void ClearStory()
+    {
+        onClear.OnNext(Unit.Default);
+    }
 
 }
