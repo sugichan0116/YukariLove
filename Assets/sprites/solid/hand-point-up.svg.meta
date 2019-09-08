@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 41e76b21df2214a47862259c17a6cb28
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/hand-point-up
-    400000: gameObject/hand-point-up/Transform
-    21200000: gameObject/hand-point-up/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/hand-point-up
+  - first:
+      4: 400000
+    second: gameObject/hand-point-up/Transform
+  - first:
+      212: 21200000
+    second: gameObject/hand-point-up/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: a168a20874800f84bad9994e903034ce
+      internalID: 0
     PhysicsOutlines: []

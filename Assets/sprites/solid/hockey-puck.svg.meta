@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: a7f49a3d6f408fd41897a9bbc01b26e7
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/hockey-puck
-    400000: gameObject/hockey-puck/Transform
-    21200000: gameObject/hockey-puck/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/hockey-puck
+  - first:
+      4: 400000
+    second: gameObject/hockey-puck/Transform
+  - first:
+      212: 21200000
+    second: gameObject/hockey-puck/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 98d410a68b5572c4eb1ba9b2f62abe9a
+      internalID: 0
     PhysicsOutlines: []

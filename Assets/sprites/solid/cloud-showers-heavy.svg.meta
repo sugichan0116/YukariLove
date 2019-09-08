@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 5f97d1da24036fb41897c1f82d454860
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/cloud-showers-heavy
-    400000: gameObject/cloud-showers-heavy/Transform
-    21200000: gameObject/cloud-showers-heavy/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/cloud-showers-heavy
+  - first:
+      4: 400000
+    second: gameObject/cloud-showers-heavy/Transform
+  - first:
+      212: 21200000
+    second: gameObject/cloud-showers-heavy/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: fc0598c287ef8424087145e72c64a8a0
+      internalID: 0
     PhysicsOutlines: []

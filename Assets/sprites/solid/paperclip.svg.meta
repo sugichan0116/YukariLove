@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: b447135beb4e59c42aa58098b4eeba24
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/paperclip
-    400000: gameObject/paperclip/Transform
-    21200000: gameObject/paperclip/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/paperclip
+  - first:
+      4: 400000
+    second: gameObject/paperclip/Transform
+  - first:
+      212: 21200000
+    second: gameObject/paperclip/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 1e4bb70a3488d574582e9c584b9cbd33
+      internalID: 0
     PhysicsOutlines: []

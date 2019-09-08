@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 11e826e82b51ad64a863883e0fe8cc8b
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/angle-left
-    400000: gameObject/angle-left/Transform
-    21200000: gameObject/angle-left/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/angle-left
+  - first:
+      4: 400000
+    second: gameObject/angle-left/Transform
+  - first:
+      212: 21200000
+    second: gameObject/angle-left/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 2df217a8f5e540242b4d000fb4dc21a3
+      internalID: 0
     PhysicsOutlines: []

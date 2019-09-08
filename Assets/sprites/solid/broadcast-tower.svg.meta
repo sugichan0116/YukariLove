@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 277a172c0a48cbf4aa69044429a7a597
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/broadcast-tower
-    400000: gameObject/broadcast-tower/Transform
-    21200000: gameObject/broadcast-tower/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/broadcast-tower
+  - first:
+      4: 400000
+    second: gameObject/broadcast-tower/Transform
+  - first:
+      212: 21200000
+    second: gameObject/broadcast-tower/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: d4135042c7210dc4ebe4b35843a26c5a
+      internalID: 0
     PhysicsOutlines: []

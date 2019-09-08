@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: f2c1a40ead365834a9f66a783823c884
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/sort-amount-down-alt
-    400000: gameObject/sort-amount-down-alt/Transform
-    21200000: gameObject/sort-amount-down-alt/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/sort-amount-down-alt
+  - first:
+      4: 400000
+    second: gameObject/sort-amount-down-alt/Transform
+  - first:
+      212: 21200000
+    second: gameObject/sort-amount-down-alt/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 50036f5e2ed195a47bdd0ca4043ec3ac
+      internalID: 0
     PhysicsOutlines: []

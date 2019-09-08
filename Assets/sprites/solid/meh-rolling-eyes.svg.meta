@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 1bf78037a4a09d948997a4e53bcf5051
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/meh-rolling-eyes
-    400000: gameObject/meh-rolling-eyes/Transform
-    21200000: gameObject/meh-rolling-eyes/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/meh-rolling-eyes
+  - first:
+      4: 400000
+    second: gameObject/meh-rolling-eyes/Transform
+  - first:
+      212: 21200000
+    second: gameObject/meh-rolling-eyes/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 69b63ac67190ed1428f7a22e45d1b1eb
+      internalID: 0
     PhysicsOutlines: []

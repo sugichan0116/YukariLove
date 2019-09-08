@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 622c170ac2a236e45a48de5067bacebf
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/chess-board
-    400000: gameObject/chess-board/Transform
-    21200000: gameObject/chess-board/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/chess-board
+  - first:
+      4: 400000
+    second: gameObject/chess-board/Transform
+  - first:
+      212: 21200000
+    second: gameObject/chess-board/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 352f88613390f934ea35440732964611
+      internalID: 0
     PhysicsOutlines: []

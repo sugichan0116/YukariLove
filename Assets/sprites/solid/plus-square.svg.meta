@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 3606e1f7df07eaa41932f3f62e9b875d
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/plus-square
-    400000: gameObject/plus-square/Transform
-    21200000: gameObject/plus-square/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/plus-square
+  - first:
+      4: 400000
+    second: gameObject/plus-square/Transform
+  - first:
+      212: 21200000
+    second: gameObject/plus-square/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 979ccdcfad97eb649b135b4920507673
+      internalID: 0
     PhysicsOutlines: []

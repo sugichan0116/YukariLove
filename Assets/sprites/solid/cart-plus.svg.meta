@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: a7b7f1d499c7dfd448cf4754eb7f650f
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/cart-plus
-    400000: gameObject/cart-plus/Transform
-    21200000: gameObject/cart-plus/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/cart-plus
+  - first:
+      4: 400000
+    second: gameObject/cart-plus/Transform
+  - first:
+      212: 21200000
+    second: gameObject/cart-plus/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: d3e640e181816a04288ec0e7449e7a06
+      internalID: 0
     PhysicsOutlines: []

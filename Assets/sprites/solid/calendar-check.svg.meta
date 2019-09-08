@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: aaee30f0da276824c804890e1e4d023d
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/calendar-check
-    400000: gameObject/calendar-check/Transform
-    21200000: gameObject/calendar-check/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/calendar-check
+  - first:
+      4: 400000
+    second: gameObject/calendar-check/Transform
+  - first:
+      212: 21200000
+    second: gameObject/calendar-check/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 66abe284a040e89449f45fb1e891b57d
+      internalID: 0
     PhysicsOutlines: []

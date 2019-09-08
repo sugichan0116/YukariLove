@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 889222aee4ef2ca49a89f6421806e967
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/microphone-slash
-    400000: gameObject/microphone-slash/Transform
-    21200000: gameObject/microphone-slash/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/microphone-slash
+  - first:
+      4: 400000
+    second: gameObject/microphone-slash/Transform
+  - first:
+      212: 21200000
+    second: gameObject/microphone-slash/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 2f153381ed58cd8448e44d4e0717729b
+      internalID: 0
     PhysicsOutlines: []

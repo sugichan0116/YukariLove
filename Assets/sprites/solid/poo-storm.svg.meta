@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: eba8a76058096a6478e67847b6392468
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/poo-storm
-    400000: gameObject/poo-storm/Transform
-    21200000: gameObject/poo-storm/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/poo-storm
+  - first:
+      4: 400000
+    second: gameObject/poo-storm/Transform
+  - first:
+      212: 21200000
+    second: gameObject/poo-storm/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 82379ea50535d2c41bce2aec60f4e9f8
+      internalID: 0
     PhysicsOutlines: []

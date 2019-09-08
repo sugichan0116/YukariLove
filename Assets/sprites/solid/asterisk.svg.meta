@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 31b5fb722d5ed024ba91db2c76e0cf32
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/asterisk
-    400000: gameObject/asterisk/Transform
-    21200000: gameObject/asterisk/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/asterisk
+  - first:
+      4: 400000
+    second: gameObject/asterisk/Transform
+  - first:
+      212: 21200000
+    second: gameObject/asterisk/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 52f449be89aafbd4ab7aab6fc4e89cc6
+      internalID: 0
     PhysicsOutlines: []

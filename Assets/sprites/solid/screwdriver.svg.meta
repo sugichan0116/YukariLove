@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 68be28cd6bab1ff41bb526a940100311
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/screwdriver
-    400000: gameObject/screwdriver/Transform
-    21200000: gameObject/screwdriver/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/screwdriver
+  - first:
+      4: 400000
+    second: gameObject/screwdriver/Transform
+  - first:
+      212: 21200000
+    second: gameObject/screwdriver/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 8dfc0c5cb5c1e0e479dfe3b3f51e607f
+      internalID: 0
     PhysicsOutlines: []

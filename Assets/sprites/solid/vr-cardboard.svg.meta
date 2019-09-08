@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: ee9e6b715fe192f4e8c51354f21f92f0
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/vr-cardboard
-    400000: gameObject/vr-cardboard/Transform
-    21200000: gameObject/vr-cardboard/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/vr-cardboard
+  - first:
+      4: 400000
+    second: gameObject/vr-cardboard/Transform
+  - first:
+      212: 21200000
+    second: gameObject/vr-cardboard/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9d2df6d1532e5f642ba57f475533eafb
+      internalID: 0
     PhysicsOutlines: []

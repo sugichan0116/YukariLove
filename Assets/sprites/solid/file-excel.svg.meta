@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 3607742a1ad679242b4c31dcbcd7f1ef
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/file-excel
-    400000: gameObject/file-excel/Transform
-    21200000: gameObject/file-excel/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/file-excel
+  - first:
+      4: 400000
+    second: gameObject/file-excel/Transform
+  - first:
+      212: 21200000
+    second: gameObject/file-excel/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 8bd0ab9facd4c8f48bdb66d6035fca3a
+      internalID: 0
     PhysicsOutlines: []

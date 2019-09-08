@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 25ffda82656858a4d9c218ab60d76a99
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/mars-stroke
-    400000: gameObject/mars-stroke/Transform
-    21200000: gameObject/mars-stroke/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/mars-stroke
+  - first:
+      4: 400000
+    second: gameObject/mars-stroke/Transform
+  - first:
+      212: 21200000
+    second: gameObject/mars-stroke/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 8df1aa6b2527ccd489a1394888dd0921
+      internalID: 0
     PhysicsOutlines: []

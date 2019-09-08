@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 5133a11ee60d4f3478e0875ab9f237e3
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/dice-four
-    400000: gameObject/dice-four/Transform
-    21200000: gameObject/dice-four/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/dice-four
+  - first:
+      4: 400000
+    second: gameObject/dice-four/Transform
+  - first:
+      212: 21200000
+    second: gameObject/dice-four/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 1e077d29f5e132047aaa99418470e8a1
+      internalID: 0
     PhysicsOutlines: []

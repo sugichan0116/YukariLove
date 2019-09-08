@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 492c9e6be3116564586ce6379779fbd7
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/grimace
-    400000: gameObject/grimace/Transform
-    21200000: gameObject/grimace/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/grimace
+  - first:
+      4: 400000
+    second: gameObject/grimace/Transform
+  - first:
+      212: 21200000
+    second: gameObject/grimace/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: f51a5013532cb954e840ee3be40e1735
+      internalID: 0
     PhysicsOutlines: []

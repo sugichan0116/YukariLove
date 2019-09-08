@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: d870e9f0203f5f643ac8f5e8cef5e6c5
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/swimmer
-    400000: gameObject/swimmer/Transform
-    21200000: gameObject/swimmer/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/swimmer
+  - first:
+      4: 400000
+    second: gameObject/swimmer/Transform
+  - first:
+      212: 21200000
+    second: gameObject/swimmer/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: c4e7c4d7ed68e0a4599a344ab2f8f991
+      internalID: 0
     PhysicsOutlines: []

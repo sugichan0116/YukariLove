@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 422bc8f85c1c27246b6a4da5e4fe4348
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/jedi
-    400000: gameObject/jedi/Transform
-    21200000: gameObject/jedi/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/jedi
+  - first:
+      4: 400000
+    second: gameObject/jedi/Transform
+  - first:
+      212: 21200000
+    second: gameObject/jedi/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 297ac78f9572c1f45aae3ca696a17161
+      internalID: 0
     PhysicsOutlines: []

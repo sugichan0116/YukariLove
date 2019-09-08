@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: aca18849237cf094fbbabfa0f33230c8
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/star-and-crescent
-    400000: gameObject/star-and-crescent/Transform
-    21200000: gameObject/star-and-crescent/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/star-and-crescent
+  - first:
+      4: 400000
+    second: gameObject/star-and-crescent/Transform
+  - first:
+      212: 21200000
+    second: gameObject/star-and-crescent/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 4c96ade6d43ed8a4bbbec894f80d0964
+      internalID: 0
     PhysicsOutlines: []

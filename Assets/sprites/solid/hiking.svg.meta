@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: f42a2b5926dfd0a49933ae5c20bdceb3
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/hiking
-    400000: gameObject/hiking/Transform
-    21200000: gameObject/hiking/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/hiking
+  - first:
+      4: 400000
+    second: gameObject/hiking/Transform
+  - first:
+      212: 21200000
+    second: gameObject/hiking/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 5d685a1c282d530488de53b43686ecca
+      internalID: 0
     PhysicsOutlines: []

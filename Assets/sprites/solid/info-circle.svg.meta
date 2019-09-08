@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 60d0eeaedfbdb5348b2fd86f63d76e37
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/info-circle
-    400000: gameObject/info-circle/Transform
-    21200000: gameObject/info-circle/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/info-circle
+  - first:
+      4: 400000
+    second: gameObject/info-circle/Transform
+  - first:
+      212: 21200000
+    second: gameObject/info-circle/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 0aa8b7979e9f329438910317b9f3ead9
+      internalID: 0
     PhysicsOutlines: []

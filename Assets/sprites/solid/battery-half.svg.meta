@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 4cd19d8b9b2564241aa0d511d52afd12
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/battery-half
-    400000: gameObject/battery-half/Transform
-    21200000: gameObject/battery-half/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/battery-half
+  - first:
+      4: 400000
+    second: gameObject/battery-half/Transform
+  - first:
+      212: 21200000
+    second: gameObject/battery-half/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 264f6923a00b9574f8d4bd5195818ed8
+      internalID: 0
     PhysicsOutlines: []

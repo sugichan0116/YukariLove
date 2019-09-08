@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 41ff218b25c7fc441a5a20e1b083486c
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/chevron-circle-right
-    400000: gameObject/chevron-circle-right/Transform
-    21200000: gameObject/chevron-circle-right/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/chevron-circle-right
+  - first:
+      4: 400000
+    second: gameObject/chevron-circle-right/Transform
+  - first:
+      212: 21200000
+    second: gameObject/chevron-circle-right/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9f71f0b0300f4444f9a6d7207ecd5630
+      internalID: 0
     PhysicsOutlines: []

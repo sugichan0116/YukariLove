@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: f5b33efc9b17e0244a2242ea8e235e89
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/haykal
-    400000: gameObject/haykal/Transform
-    21200000: gameObject/haykal/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/haykal
+  - first:
+      4: 400000
+    second: gameObject/haykal/Transform
+  - first:
+      212: 21200000
+    second: gameObject/haykal/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 69d60f2342d6cd945b7c79d0a0b28c4b
+      internalID: 0
     PhysicsOutlines: []

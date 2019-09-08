@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 440da7f5353ca9646a8e9f05dfaebd26
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/retweet
-    400000: gameObject/retweet/Transform
-    21200000: gameObject/retweet/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/retweet
+  - first:
+      4: 400000
+    second: gameObject/retweet/Transform
+  - first:
+      212: 21200000
+    second: gameObject/retweet/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: d890a92253af03840b4027fd2a2683f9
+      internalID: 0
     PhysicsOutlines: []

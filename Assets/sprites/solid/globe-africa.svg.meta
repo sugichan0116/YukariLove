@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 77ba5288ca8519541a3f7c9bbb8a8e1c
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/globe-africa
-    400000: gameObject/globe-africa/Transform
-    21200000: gameObject/globe-africa/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/globe-africa
+  - first:
+      4: 400000
+    second: gameObject/globe-africa/Transform
+  - first:
+      212: 21200000
+    second: gameObject/globe-africa/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9886ea5f2c96b5447a1fa58b8d4c756d
+      internalID: 0
     PhysicsOutlines: []

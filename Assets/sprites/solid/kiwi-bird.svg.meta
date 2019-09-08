@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 1099d5fb8782b9d4c85268d2f2d7e4c4
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/kiwi-bird
-    400000: gameObject/kiwi-bird/Transform
-    21200000: gameObject/kiwi-bird/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/kiwi-bird
+  - first:
+      4: 400000
+    second: gameObject/kiwi-bird/Transform
+  - first:
+      212: 21200000
+    second: gameObject/kiwi-bird/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: eb663e84d89dc394380d1e7096e368a1
+      internalID: 0
     PhysicsOutlines: []

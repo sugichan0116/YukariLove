@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 194f72c4e93852a469ea9ec1419817cf
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/sd-card
-    400000: gameObject/sd-card/Transform
-    21200000: gameObject/sd-card/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/sd-card
+  - first:
+      4: 400000
+    second: gameObject/sd-card/Transform
+  - first:
+      212: 21200000
+    second: gameObject/sd-card/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 4d1c963b8ddf85c4f8f0fffe01e48a5f
+      internalID: 0
     PhysicsOutlines: []

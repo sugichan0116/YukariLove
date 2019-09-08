@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 04529e46ae33fd94b95c52c0169145d8
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/tty
-    400000: gameObject/tty/Transform
-    21200000: gameObject/tty/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/tty
+  - first:
+      4: 400000
+    second: gameObject/tty/Transform
+  - first:
+      212: 21200000
+    second: gameObject/tty/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9445addb61f18e44d889dd52b585525a
+      internalID: 0
     PhysicsOutlines: []

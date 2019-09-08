@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: b2f0d69a75cc422429e92a713a8f9ec1
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/user-ninja
-    400000: gameObject/user-ninja/Transform
-    21200000: gameObject/user-ninja/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/user-ninja
+  - first:
+      4: 400000
+    second: gameObject/user-ninja/Transform
+  - first:
+      212: 21200000
+    second: gameObject/user-ninja/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: c82d233c02674b948aea5f394fc38413
+      internalID: 0
     PhysicsOutlines: []

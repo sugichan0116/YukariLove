@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: d5b16bd074094b34489ac2cbdd571bd0
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/grin-hearts
-    400000: gameObject/grin-hearts/Transform
-    21200000: gameObject/grin-hearts/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/grin-hearts
+  - first:
+      4: 400000
+    second: gameObject/grin-hearts/Transform
+  - first:
+      212: 21200000
+    second: gameObject/grin-hearts/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9eefc74c996b862419f35c6b2e383111
+      internalID: 0
     PhysicsOutlines: []

@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: b8d7edb2b27514d44ad1b10aeffea869
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/car-crash
-    400000: gameObject/car-crash/Transform
-    21200000: gameObject/car-crash/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/car-crash
+  - first:
+      4: 400000
+    second: gameObject/car-crash/Transform
+  - first:
+      212: 21200000
+    second: gameObject/car-crash/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 8f46d2bd938aa334a86c3863fb7570c0
+      internalID: 0
     PhysicsOutlines: []

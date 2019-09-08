@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: c4a654e9d1496c64196c53fbc76a246a
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/holly-berry
-    400000: gameObject/holly-berry/Transform
-    21200000: gameObject/holly-berry/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/holly-berry
+  - first:
+      4: 400000
+    second: gameObject/holly-berry/Transform
+  - first:
+      212: 21200000
+    second: gameObject/holly-berry/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 584b4372561ce5b4ea3b9b1b8685661f
+      internalID: 0
     PhysicsOutlines: []

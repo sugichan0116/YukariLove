@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: f1134943adfb2e74f8df8fa6888d0083
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/file-invoice-dollar
-    400000: gameObject/file-invoice-dollar/Transform
-    21200000: gameObject/file-invoice-dollar/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/file-invoice-dollar
+  - first:
+      4: 400000
+    second: gameObject/file-invoice-dollar/Transform
+  - first:
+      212: 21200000
+    second: gameObject/file-invoice-dollar/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: d90153f758a70a042adc6680242de056
+      internalID: 0
     PhysicsOutlines: []

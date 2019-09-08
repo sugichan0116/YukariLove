@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 3daf6666a74c22d4aa9c6e995ab4dfef
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/door-open
-    400000: gameObject/door-open/Transform
-    21200000: gameObject/door-open/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/door-open
+  - first:
+      4: 400000
+    second: gameObject/door-open/Transform
+  - first:
+      212: 21200000
+    second: gameObject/door-open/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 62555b8faa4635247b803b41a6ae039d
+      internalID: 0
     PhysicsOutlines: []

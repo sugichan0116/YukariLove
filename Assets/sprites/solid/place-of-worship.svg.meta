@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 41148160f74335a4788bb29d2eade675
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/place-of-worship
-    400000: gameObject/place-of-worship/Transform
-    21200000: gameObject/place-of-worship/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/place-of-worship
+  - first:
+      4: 400000
+    second: gameObject/place-of-worship/Transform
+  - first:
+      212: 21200000
+    second: gameObject/place-of-worship/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 6040f4ae57f65b646a807632ab6e71c7
+      internalID: 0
     PhysicsOutlines: []

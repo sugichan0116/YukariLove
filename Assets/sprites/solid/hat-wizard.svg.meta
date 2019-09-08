@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: a346d9e302c47284588ba8d6b4e3127a
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/hat-wizard
-    400000: gameObject/hat-wizard/Transform
-    21200000: gameObject/hat-wizard/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/hat-wizard
+  - first:
+      4: 400000
+    second: gameObject/hat-wizard/Transform
+  - first:
+      212: 21200000
+    second: gameObject/hat-wizard/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 134ab913632812a4ab8f04a0b5543135
+      internalID: 0
     PhysicsOutlines: []

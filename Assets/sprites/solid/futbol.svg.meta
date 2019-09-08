@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 2410bbc9d84de9b40a54da23ee32cc0f
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/futbol
-    400000: gameObject/futbol/Transform
-    21200000: gameObject/futbol/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/futbol
+  - first:
+      4: 400000
+    second: gameObject/futbol/Transform
+  - first:
+      212: 21200000
+    second: gameObject/futbol/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: cfa59f0c03a92c74398c1d942c60cf6a
+      internalID: 0
     PhysicsOutlines: []

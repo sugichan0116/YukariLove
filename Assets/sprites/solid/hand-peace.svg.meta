@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: a2b2dcc95bd79d34ab2658c9c6562b6c
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/hand-peace
-    400000: gameObject/hand-peace/Transform
-    21200000: gameObject/hand-peace/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/hand-peace
+  - first:
+      4: 400000
+    second: gameObject/hand-peace/Transform
+  - first:
+      212: 21200000
+    second: gameObject/hand-peace/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: de160e45c740298498e4b66644cf82ef
+      internalID: 0
     PhysicsOutlines: []

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UniRx.Triggers;
 using DG.Tweening;
 using Hellmade.Sound;
+using UnityEngine.Events;
 
 public class ButtonBehaviour : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class ButtonBehaviour : MonoBehaviour
     public Color main, sub;
 
     private Sequence sequence;
+
+    public UnityEvent onClicked = new UnityEvent();
 
     // Start is called before the first frame update
     void Start()
@@ -41,12 +44,14 @@ public class ButtonBehaviour : MonoBehaviour
         trigger
             .OnPointerClickAsObservable()
             .Subscribe(_ => {
-                var offset = transform.localScale;
-                sequence = DOTween.Sequence()
-                    .Append(transform.DOScale(Vector3.one * 0.95f, 0.1f))
-                    .OnComplete(() => {
-                        transform.localScale = offset;
-                    });
+                onClicked.Invoke();
+                //var offset = transform.localScale;
+                //sequence = DOTween.Sequence()
+                //    .Append(transform.DOScale(Vector3.one * 0.95f, 0.1f))
+                //    .OnComplete(() => {
+                //        transform.localScale = offset;
+                //    });
+
                 //if (card.selected) EazySoundManager.PlayUISound(sfx_click);
             })
             .AddTo(this);

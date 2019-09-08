@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: ec6f642435b9d1147ac2e75c41031619
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/heart
-    400000: gameObject/heart/Transform
-    21200000: gameObject/heart/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/heart
+  - first:
+      4: 400000
+    second: gameObject/heart/Transform
+  - first:
+      212: 21200000
+    second: gameObject/heart/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 7f8d7abe45bed7b43b192f6f01bbc8c4
+      internalID: 0
     PhysicsOutlines: []

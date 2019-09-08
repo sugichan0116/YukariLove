@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 7f620e3adcb16d447b108bfbb829009a
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/dog
-    400000: gameObject/dog/Transform
-    21200000: gameObject/dog/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/dog
+  - first:
+      4: 400000
+    second: gameObject/dog/Transform
+  - first:
+      212: 21200000
+    second: gameObject/dog/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: b7678cffbe7d1db4baa2593fb696cada
+      internalID: 0
     PhysicsOutlines: []

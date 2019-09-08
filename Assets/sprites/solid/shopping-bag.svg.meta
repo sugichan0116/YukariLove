@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 54e6f971245430d4faf3e2853b23cede
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/shopping-bag
-    400000: gameObject/shopping-bag/Transform
-    21200000: gameObject/shopping-bag/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/shopping-bag
+  - first:
+      4: 400000
+    second: gameObject/shopping-bag/Transform
+  - first:
+      212: 21200000
+    second: gameObject/shopping-bag/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 34b2f39d3bb5c2f4ba5066f4f886e936
+      internalID: 0
     PhysicsOutlines: []

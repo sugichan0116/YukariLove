@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 91f684e6f2939df41b26e4802c14f972
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/poll-h
-    400000: gameObject/poll-h/Transform
-    21200000: gameObject/poll-h/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/poll-h
+  - first:
+      4: 400000
+    second: gameObject/poll-h/Transform
+  - first:
+      212: 21200000
+    second: gameObject/poll-h/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 3f43a6edd8118e3478f586e7f6dc2a63
+      internalID: 0
     PhysicsOutlines: []

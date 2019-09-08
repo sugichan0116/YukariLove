@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: be68cad28127e4a44adbd190b7078640
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/glass-whiskey
-    400000: gameObject/glass-whiskey/Transform
-    21200000: gameObject/glass-whiskey/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/glass-whiskey
+  - first:
+      4: 400000
+    second: gameObject/glass-whiskey/Transform
+  - first:
+      212: 21200000
+    second: gameObject/glass-whiskey/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 67ed69001a213de44bc637ef421e2a64
+      internalID: 0
     PhysicsOutlines: []

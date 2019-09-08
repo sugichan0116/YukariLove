@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: acaf2a4c9e5b27f4391c2a6e2cbf15d8
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/stethoscope
-    400000: gameObject/stethoscope/Transform
-    21200000: gameObject/stethoscope/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/stethoscope
+  - first:
+      4: 400000
+    second: gameObject/stethoscope/Transform
+  - first:
+      212: 21200000
+    second: gameObject/stethoscope/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 6547007b497fea94c92a0d7a06ca81e5
+      internalID: 0
     PhysicsOutlines: []

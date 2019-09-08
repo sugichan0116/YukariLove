@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 7dbc7fc9860e55c4197063ae538c9fcd
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/weight-hanging
-    400000: gameObject/weight-hanging/Transform
-    21200000: gameObject/weight-hanging/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/weight-hanging
+  - first:
+      4: 400000
+    second: gameObject/weight-hanging/Transform
+  - first:
+      212: 21200000
+    second: gameObject/weight-hanging/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 101ce590d80c4e44ebd1a3ed5d2c4042
+      internalID: 0
     PhysicsOutlines: []

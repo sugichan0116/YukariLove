@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: cfd1170561a956f4fb050301ede7a3e5
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/ring
-    400000: gameObject/ring/Transform
-    21200000: gameObject/ring/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/ring
+  - first:
+      4: 400000
+    second: gameObject/ring/Transform
+  - first:
+      212: 21200000
+    second: gameObject/ring/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 57cc52bc449efda4597400cd86ed8ba5
+      internalID: 0
     PhysicsOutlines: []

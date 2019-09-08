@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 235dc4ead96ce0a459cbe4d8d7f0d195
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/star-half-alt
-    400000: gameObject/star-half-alt/Transform
-    21200000: gameObject/star-half-alt/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/star-half-alt
+  - first:
+      4: 400000
+    second: gameObject/star-half-alt/Transform
+  - first:
+      212: 21200000
+    second: gameObject/star-half-alt/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9a37d298a4845d54fb3ac7d1be159a9a
+      internalID: 0
     PhysicsOutlines: []

@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 4f025ca5295b8b0428621ee28dfd0bd1
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/compact-disc
-    400000: gameObject/compact-disc/Transform
-    21200000: gameObject/compact-disc/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/compact-disc
+  - first:
+      4: 400000
+    second: gameObject/compact-disc/Transform
+  - first:
+      212: 21200000
+    second: gameObject/compact-disc/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: b7d77573fffba7946b2aff2edffba162
+      internalID: 0
     PhysicsOutlines: []

@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 97ca5fffeabcf954da61b2cda8396864
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/archway
-    400000: gameObject/archway/Transform
-    21200000: gameObject/archway/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/archway
+  - first:
+      4: 400000
+    second: gameObject/archway/Transform
+  - first:
+      212: 21200000
+    second: gameObject/archway/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 8b41f39b1f1af8f49bdbff2f846168cf
+      internalID: 0
     PhysicsOutlines: []

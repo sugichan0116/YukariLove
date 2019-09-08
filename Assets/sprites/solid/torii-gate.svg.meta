@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 15f315987e1342944be492db2190e328
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/torii-gate
-    400000: gameObject/torii-gate/Transform
-    21200000: gameObject/torii-gate/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/torii-gate
+  - first:
+      4: 400000
+    second: gameObject/torii-gate/Transform
+  - first:
+      212: 21200000
+    second: gameObject/torii-gate/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 860ba69e7ba264547a002d15dfb26404
+      internalID: 0
     PhysicsOutlines: []

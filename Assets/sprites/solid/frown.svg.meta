@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: e1452a06fdc264c4792eb5214bd179e9
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/frown
-    400000: gameObject/frown/Transform
-    21200000: gameObject/frown/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/frown
+  - first:
+      4: 400000
+    second: gameObject/frown/Transform
+  - first:
+      212: 21200000
+    second: gameObject/frown/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 120627742b68672469d3d03a82c7f9fa
+      internalID: 0
     PhysicsOutlines: []

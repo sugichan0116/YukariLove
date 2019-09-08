@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 84814deaf7c496e4abddd6484b68f23c
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/grin-squint-tears
-    400000: gameObject/grin-squint-tears/Transform
-    21200000: gameObject/grin-squint-tears/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/grin-squint-tears
+  - first:
+      4: 400000
+    second: gameObject/grin-squint-tears/Transform
+  - first:
+      212: 21200000
+    second: gameObject/grin-squint-tears/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 9387a427d2d51c64dbdbfb63bcea35c8
+      internalID: 0
     PhysicsOutlines: []

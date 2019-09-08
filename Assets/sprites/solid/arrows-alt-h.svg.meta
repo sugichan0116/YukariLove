@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 8df909d05b2cf964db6c71afb368f73d
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/arrows-alt-h
-    400000: gameObject/arrows-alt-h/Transform
-    21200000: gameObject/arrows-alt-h/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/arrows-alt-h
+  - first:
+      4: 400000
+    second: gameObject/arrows-alt-h/Transform
+  - first:
+      212: 21200000
+    second: gameObject/arrows-alt-h/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: b16fd53bf20034343ace1ce150cf63f0
+      internalID: 0
     PhysicsOutlines: []

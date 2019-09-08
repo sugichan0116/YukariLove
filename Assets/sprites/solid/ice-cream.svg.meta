@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 7bb967b725b18ea48bf0b0af49e3ccc7
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/ice-cream
-    400000: gameObject/ice-cream/Transform
-    21200000: gameObject/ice-cream/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/ice-cream
+  - first:
+      4: 400000
+    second: gameObject/ice-cream/Transform
+  - first:
+      212: 21200000
+    second: gameObject/ice-cream/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 89e4768167d86034b88b43cd7187909a
+      internalID: 0
     PhysicsOutlines: []

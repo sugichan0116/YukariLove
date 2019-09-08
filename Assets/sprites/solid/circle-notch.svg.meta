@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: d75e1207c2f21004cb5edee021a53206
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/circle-notch
-    400000: gameObject/circle-notch/Transform
-    21200000: gameObject/circle-notch/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/circle-notch
+  - first:
+      4: 400000
+    second: gameObject/circle-notch/Transform
+  - first:
+      212: 21200000
+    second: gameObject/circle-notch/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: c659cea8ad17dfd418715fdf3f8b50c1
+      internalID: 0
     PhysicsOutlines: []
