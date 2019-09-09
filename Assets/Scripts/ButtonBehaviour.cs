@@ -13,7 +13,7 @@ public class ButtonBehaviour : MonoBehaviour
     public TextMeshProUGUI label;
     public Color main, sub;
 
-    private Sequence sequence;
+    //private Sequence sequence;
 
     public UnityEvent onClicked = new UnityEvent();
 
@@ -57,8 +57,8 @@ public class ButtonBehaviour : MonoBehaviour
             .AddTo(this);
     }
 
-    private void OnDestroy()
-    {
-        sequence.Kill();
-    }
+    //private void OnDestroy()
+    //{
+    //    sequence.Kill();
+    //}
 }
