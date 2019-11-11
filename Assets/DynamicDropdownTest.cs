@@ -20,7 +20,10 @@ public class DynamicDropdownTest : MonoBehaviour
 
     public Subject<object> onChanged = new Subject<object>();
 
-    [SerializeField, DynamicDropdown("Scenes")]
+#if UNITY_EDITOR
+    [DynamicDropdown("Scenes")]
+#endif
+    [SerializeField]
     string scene;
 
     [SerializeField, ReadOnly]
@@ -38,6 +41,7 @@ public class DynamicDropdownTest : MonoBehaviour
             });
     }
 
+#if UNITY_EDITOR
     private IEnumerable Scenes()
     {
         //var index = SceneManager.sceneCountInBuildSettings;
@@ -49,6 +53,7 @@ public class DynamicDropdownTest : MonoBehaviour
 
         return scenes;
     }
+#endif
 
     private void Start()
     {

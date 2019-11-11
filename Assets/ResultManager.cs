@@ -18,6 +18,8 @@ public class ResultManager : MonoBehaviour
     public ScoreItem total;
     public float timespan = 0.8f;
 
+    private int score = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,7 @@ public class ResultManager : MonoBehaviour
                 }
 
                 int count = items.Count;
-                int score = items.Sum(item => item.Item2);
+                score = items.Sum(item => item.Item2);
 
                 Observable
                     .Interval(TimeSpan.FromSeconds(timespan))
@@ -80,5 +82,10 @@ public class ResultManager : MonoBehaviour
 
             })
             .AddTo(this);
+    }
+
+    public void SendScore()
+    {
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking(score);
     }
 }

@@ -20,9 +20,8 @@ public class DynamicDropdownPropertyDrawer : UnityEditor.PropertyDrawer
         var target = PropertyUtility.GetTargetObject(property);
         var method = ReflectionUtility.GetMethod(target, attr.enumMethodName);
         var values = (IEnumerable<object>)method.Invoke(target, null);
-
         if (values == null) return;
-
+        
         // Selected value
         object selectedValue = fieldInfo.GetValue(target);
 
